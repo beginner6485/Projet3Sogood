@@ -1,0 +1,136 @@
+
+body
+{
+    font-family: 'Roboto','Shrikhand';
+}
+
+h3
+{
+    font-family: 'Shrikhand' ;
+    padding-top: 20px;
+}
+
+h5
+{
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-bottom: #99E2D0 solid 2px;
+    width: 2em;
+}
+
+h6
+{
+    font-family: 'Shrikhand';
+    color: white;
+}
+
+.accl_logo {
+    width: 40%;
+    display: block;
+    margin:auto;
+    }
+
+.accl_menu{
+    width: 100%;
+    background: #F2F2F2;
+    height: 1400px;
+}
+
+.accl_menu--under{
+    height: 250px;
+}
+
+ .accl_menu--pic{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    }
+
+#accl_plats{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 500px;
+}
+
+#accl_plats_entrees
+{
+    background-color: #F2F2F2;
+    border-radius: 12px 12px 12px 12px;
+    padding-left: 1em;
+    position: relative;
+    top: -50px;
+    border-radius: 20px 20px;
+}
+
+#accl_plats_resist + #accl_plats_desserts
+{
+    border-radius: 12px 12px 12px 12px;
+    padding-left: 1em;
+    top: -50px;
+}
+
+.--choix
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 11px 0px lightgrey;
+    height: 4em;
+    line-height: 1.5em;
+    width: 95%;
+    padding-left: 5px;
+}
+
+span.--text
+{
+    font-weight: lighter;
+}
+
+span.--prix
+{
+    font-weight: bold;
+    margin-right: auto;
+
+}
+
+.btn
+{
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: white;
+    box-shadow: -1px 8px 13px 1px lightgrey;
+    border-radius: 30px;
+    padding-top: 1em;
+    text-align: center;
+    width: 50%;
+    height: 2em;
+    margin: auto;
+    margin-top: 2em;
+}
+
+#accl-footer
+{
+    background-color: rgba(0, 0, 0, 0.749);
+    padding-left: 1em;
+}
+
+.fas
+{
+    color: gray;
+    padding-right: 1em;
+
+}
+
+li
+{
+    list-style:none;
+    padding-left: 0em;
+    line-height: 1.5em;
+    font-size: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
