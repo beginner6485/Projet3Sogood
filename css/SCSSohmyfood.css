@@ -16,6 +16,12 @@
     color: white;
   }
 
+  h6 {
+    font-family: "Shrikhand";
+    color: white;
+    display: inline;
+  }
+
   .accl_logo {
     width: 40%;
     display: block;
@@ -58,20 +64,28 @@
     box-shadow: -1px 8px 13px 1px lightgrey;
     background-color: #F2F2F2;
   }
-
-  .xplore {
+  .btn.hover {
+    background-color: pink;
+  }
+  .btn.xplore {
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     box-shadow: -1px 8px 13px 1px lightgrey;
     border-radius: 30px;
+    height: 2em;
+    line-height: 1em;
+  }
+  .btn.xplore:hover {
+    transform: all 450ms;
+    background: linear-gradient(#ff97e1, #b192d6);
+    box-shadow: -1px 8px 10px 1px grey;
   }
 
   .btn--nb {
     display: inline;
-    margin-left: -4em;
-    border-radius: 20px;
-    padding: 7px;
-    border: #9356DC solid 1px;
+    margin-left: -1em;
+    border-radius: 50%;
+    padding: 6px;
     background-color: #9356DC;
     color: white;
   }
@@ -79,11 +93,15 @@
   .fas {
     color: gray;
     padding-right: 1em;
-    margin-left: 2em;
   }
 
   span.btn--txt {
     margin-left: 1em;
+  }
+
+  .mere {
+    display: inline-block;
+    width: 90%;
   }
 
   #accl-vsn {
@@ -125,12 +143,20 @@
     font-weight: lighter;
   }
 
+  .heart {
+    float: right;
+    padding-right: 1em;
+  }
+  .heart:hover {
+    color: #9356DC;
+  }
+
   #accl-footer {
     background-color: rgba(0, 0, 0, 0.749);
     padding-left: 1em;
   }
 
-  ul {
+  li {
     list-style: none;
     padding-left: 0em;
     line-height: 1.5em;

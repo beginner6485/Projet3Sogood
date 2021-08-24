@@ -1,5 +1,6 @@
 @media screen and (max-width: 750px)
 {
+
 body
 {
     font-family: 'Roboto','Shrikhand';
@@ -19,6 +20,13 @@ h5
 {
     font-family: 'shrikhand';
     color: white;
+}
+
+h6 
+{
+  font-family: 'Shrikhand';
+  color: white;
+  display: inline;
 }
 
 .accl_logo {
@@ -48,6 +56,10 @@ h5
     padding-bottom: 3em;
     padding-top: 1em;
 }
+
+$btn-end: linear-gradient(#ff97e1,#b192d6); 
+$btn-color:#9356DC;
+
 .btn {
     border-radius: 30px;
     padding-top: 1em;
@@ -61,23 +73,30 @@ h5
     border-radius: 30px;
     box-shadow: -1px 8px 13px 1px lightgrey;
     background-color: #F2F2F2;
-}
-
-.xplore
- {
+    &.hover{
+        background-color: pink;
+    }
+    &.xplore{
     background: linear-gradient(#FF79DA,#9356DC);
     color: white;
     box-shadow: -1px 8px 13px 1px lightgrey;
     border-radius: 30px;
+    height: 2em;
+    line-height: 1em;
+    &:hover{
+        transform: all 450ms;
+        background: $btn-end;
+        box-shadow: -1px 8px 10px 1px grey;;
     }
+}
+}
 
 .btn--nb
 {
   display: inline;
-  margin-left: -4em;
-  border-radius: 20px;
-  padding: 7px;
-  border: #9356DC solid 1px;
+  margin-left: -1em;
+  border-radius: 50%;
+  padding: 6px;
   background-color: #9356DC;
   color: white;
 }
@@ -86,7 +105,6 @@ h5
 {
     color: gray;
     padding-right: 1em;
-    margin-left: 2em;
 }
 
 span.btn--txt
@@ -98,6 +116,7 @@ span.btn--txt
 {
     display: inline-block;
     width: 90%;
+
 }
 
 #accl-vsn
@@ -144,6 +163,15 @@ span.btn--txt
     font-weight: lighter;
 }
 
+.heart
+{
+    float: right;
+    padding-right: 1em;
+    &:hover{
+    color: $btn-color;
+    }
+}
+
 
 #accl-footer
 {
@@ -151,7 +179,7 @@ span.btn--txt
     padding-left: 1em;
 }
 
-ul
+li
 {
     list-style:none;
     padding-left: 0em;

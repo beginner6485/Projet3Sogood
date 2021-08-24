@@ -1,3 +1,4 @@
+@media screen and (max-width: 750px) {
 
 body
 {
@@ -22,6 +23,7 @@ h6
 {
     font-family: 'Shrikhand';
     color: white;
+    display: inline;
 }
 
 .accl_logo {
@@ -78,18 +80,20 @@ h6
     line-height: 1.5em;
     width: 95%;
     padding-left: 5px;
+    padding-top: 3px;
 }
 
 span.--text
 {
     font-weight: lighter;
+    font-size: smaller;
 }
 
 span.--prix
 {
     font-weight: bold;
-    margin-right: auto;
-
+    float: right;
+    margin-right: 10px;
 }
 
 .btn
@@ -132,5 +136,5 @@ a
     text-decoration: none;
     color: white;
 }
-
+}
 
