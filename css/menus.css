@@ -43,13 +43,11 @@
     object-fit: cover;
   }
 
-  #accl_plats {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    height: 500px;
+  .accl_plats {
+    padding-left: 1em;
   }
 
-  #accl_plats_entrees {
+  .accl_plats_entrees {
     background-color: #F2F2F2;
     border-radius: 12px 12px 12px 12px;
     padding-left: 1em;
@@ -58,17 +56,11 @@
     border-radius: 20px 20px;
   }
 
-  #accl_plats_resist + #accl_plats_desserts {
-    border-radius: 12px 12px 12px 12px;
-    padding-left: 1em;
-    top: -50px;
-  }
-
   .--choix {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 5px 11px 0px lightgrey;
-    height: 4em;
+    height: 3.5em;
     line-height: 1.5em;
     width: 95%;
     padding-left: 5px;

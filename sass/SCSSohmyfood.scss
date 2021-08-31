@@ -57,7 +57,7 @@ h6
     padding-top: 1em;
 }
 
-$btn-end: linear-gradient(#ff97e1,#b192d6); 
+$btn-end: linear-gradient(#FF79DA,#9356DC); 
 $btn-color:#9356DC;
 
 .btn {
@@ -67,38 +67,82 @@ $btn-color:#9356DC;
     text-align: center;
     width: 85%;
     height: 3em;
-    line-height: 3em;
     margin: auto;
     font-weight: bolder;
-    border-radius: 30px;
     box-shadow: -1px 8px 13px 1px lightgrey;
     background-color: #F2F2F2;
-    &.hover{
-        background-color: pink;
-    }
     &.xplore{
-    background: linear-gradient(#FF79DA,#9356DC);
-    color: white;
-    box-shadow: -1px 8px 13px 1px lightgrey;
-    border-radius: 30px;
-    height: 2em;
-    line-height: 1em;
-    &:hover{
-        transform: all 450ms;
-        background: $btn-end;
-        box-shadow: -1px 8px 10px 1px grey;;
+        background: linear-gradient(#FF79DA,#9356DC);
+        color: white;
+        box-shadow: -1px 8px 13px 1px lightgrey;
+        border-radius: 30px;
+        height: 2em;
+        line-height: 1em;
     }
 }
+
+.xplore:hover
+{
+    background:$btn-end lighten ($btn-end,5);
+    box-shadow: -1px 8px 10px 1px grey;
+}
+
+.svl:hover{
+    background: #ffffff;
+    box-shadow: -1px 8px 10px 1px grey;
 }
 
 .btn--nb
 {
-  display: inline;
+  display: inline-block;
   margin-left: -1em;
+  height: 1em;
+  width: 1em;
   border-radius: 50%;
   padding: 6px;
   background-color: #9356DC;
   color: white;
+}
+
+/*test heart - solution Openclass*/
+.fa-heart {
+    border: solid 1em grey;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50%;
+    padding:.2em;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: red;
+    cursor: pointer;
+}
+
+/*test heart*/
+
+.heart{
+    border: 1em grey;
+    background-color:none;
+
+    &:active {
+        & + .progress {
+            & > .progress__heart {
+                    transform: scaleY(1);
+                }
+            }
+        }
+}
+
+.progress {
+    &__heart {
+        transform-origin: bottom;
+        transform: scaleY(0);
+        transition: transform 2000ms cubic-bezier(.32, 0, .07, 1); 
+    }
 }
 
 .fas
@@ -106,6 +150,7 @@ $btn-color:#9356DC;
     color: gray;
     padding-right: 1em;
 }
+
 
 span.btn--txt
 {
