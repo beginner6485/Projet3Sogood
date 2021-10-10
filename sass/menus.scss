@@ -46,7 +46,7 @@ h6
     width: 100%;
     height: 250px;
     object-fit: cover;
-    }
+}
 
 .accl_plats{
     padding-left: 1em;
@@ -70,8 +70,59 @@ h6
     width: 95%;
     padding-left: 5px;
     padding-top: 3px;
+    &:active{
+        &.apparition{
+            transform: scaleX(1);
+            animation-name: apparition;
+            animation-duration: 1000ms;
+        }
+    }
 }
 
+@keyframes apparition{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform:scale(1)
+    }
+}
+
+
+/*.--choix{
+    &:hover{
+    transform :scale(1)
+    span{
+        transform: translateY(-2);
+    }
+}
+}
+
+.--choix{
+    transform: scale(0.1);
+    transition: transform 330ms ease-in-out;
+    overflow: hidden;
+    span{
+        display: inline-block;
+        transform: translateY(0);
+        transition: transform 280ms ease-in-out 50ms;
+        display: block;
+    }
+}
+
+.--choix{
+    opacity: 0;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  transition: opacity 1s;
+}
+  
+.--choix:hover{ //keyframes
+  opacity: 1;
+}
+*/
 span.--text
 {
     font-weight: lighter;
@@ -126,4 +177,3 @@ a
     color: white;
 }
 }
-

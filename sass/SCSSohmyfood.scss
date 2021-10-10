@@ -57,7 +57,7 @@ h6
     padding-top: 1em;
 }
 
-$btn-end: linear-gradient(#FF79DA,#9356DC); 
+$btn-end: #FF79DA; 
 $btn-color:#9356DC;
 
 .btn {
@@ -83,7 +83,7 @@ $btn-color:#9356DC;
 
 .xplore:hover
 {
-    background:$btn-end lighten ($btn-end,5);
+    background: linear-gradient(lighten(#FF79DA,10%),lighten(#9356DC,10%));
     box-shadow: -1px 8px 10px 1px grey;
 }
 
@@ -100,31 +100,11 @@ $btn-color:#9356DC;
   width: 1em;
   border-radius: 50%;
   padding: 6px;
-  background-color: #9356DC;
+  background-color: $btn-color;
   color: white;
 }
 
-/*test heart - solution Openclass*/
-.fa-heart {
-    border: solid 1em grey;
-    color: #FFF;
-    background-color: #000;
-    border-radius: 50%;
-    padding:.2em;
-}
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart:hover::before{
-    color: red;
-    cursor: pointer;
-}
-
-/*test heart*/
-
-.heart{
+/*.heart{
     border: 1em grey;
     background-color:none;
 
@@ -135,22 +115,42 @@ $btn-color:#9356DC;
                 }
             }
         }
-}
+}*/
 
 .progress {
-    &__heart {
-        transform-origin: bottom;
-        transform: scaleY(0);
-        transition: transform 2000ms cubic-bezier(.32, 0, .07, 1); 
+    width: 2em;
+    float: right;
+    height: 2em;
+    .heart {
+        position: absolute;
+        //transform-origin: bottom;
+        //transform: scaleY(0);
+        //transition: transform 2000ms cubic-bezier(.32, 0, .07, 1); 
+    }
+}
+.far {
+    color: transparent;
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    &:hover{
+    color: transparent;
+    background: transparent;
     }
 }
 
-.fas
-{
-    color: gray;
-    padding-right: 1em;
+.full {
+    color: transparent;
+    background:transparent;
+    &:hover{
+        color: transparent;
+        background: linear-gradient($btn-end,$btn-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
 }
-
 
 span.btn--txt
 {
@@ -186,6 +186,18 @@ span.btn--txt
     margin: auto;
     padding-bottom: 6px;
     width: 90%;
+    position: relative
+}
+
+.nv 
+{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    transform: translate(0%,0%);
+    background-color: #99E2D0;
+    padding: 0.5em;
+
 }
 
 .picsize
